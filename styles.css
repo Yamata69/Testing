@@ -1,0 +1,650 @@
+/* Global Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: url('background1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  color: white;
+}
+
+/* Login/Register Styles */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vh;
+}
+
+.login-box {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 4vh 3vw;
+  border-radius: 2vh;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 2vh rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .login-box {
+    width: 95%;
+    padding: 3vh 4vw;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .section {
+    padding: 30px 0;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  body {
+    padding-top: 56px;
+  }
+
+  .btn-group {
+    flex-direction: column;
+  }
+
+  .btn-group .btn {
+    margin: 5px 0;
+    border-radius: 5px !important;
+  }
+
+  .mobile-controls {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(128, 0, 255, 0.2);
+    backdrop-filter: blur(8px);
+  }
+
+  .control-btn {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(128, 0, 255, 0.3);
+    border: 2px solid rgba(128, 0, 255, 0.5);
+    color: white;
+    font-size: 28px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 5px;
+    transition: all 0.2s ease;
+    box-shadow: 0 0 15px rgba(128, 0, 255, 0.3);
+  }
+
+  .control-btn:active {
+    background-color: rgba(128, 0, 255, 0.6);
+    transform: scale(0.95);
+    box-shadow: 0 0 20px rgba(128, 0, 255, 0.5);
+  }
+
+  .btn-success {
+    background-color: #8000ff !important;
+    border-color: #8000ff !important;
+    box-shadow: 0 0 15px rgba(128, 0, 255, 0.5);
+  }
+
+  .btn-success:hover {
+    background-color: #9933ff !important;
+    border-color: #9933ff !important;
+    box-shadow: 0 0 20px rgba(128, 0, 255, 0.7);
+  }
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Form Controls */
+.form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: none;
+}
+
+.form-control::placeholder {
+  color: #ccc;
+}
+
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: none;
+  color: white;
+}
+
+/* Dashboard Styles */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+body {
+  padding-top: 70px;
+}
+
+.hero {
+  padding-top: 2rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: rgba(255,255,255,0.9) !important;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #8000ff !important;
+}
+
+.nav-link.active {
+  color: #8000ff !important;
+}
+
+.hero {
+  padding: 80px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.section {
+  padding: 60px 0;
+  background-color: rgba(128, 0, 255, 0.2);
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.footer {
+  padding: 30px 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  font-size: 0.9rem;
+}
+
+/* Buttons */
+.btn-custom {
+  background-color: #8000ff;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 1rem;
+  border: 2px solid white;
+}
+
+.btn-custom:hover {
+  background-color: white;
+  color: #8000ff;
+}
+
+.btn-outline-light:hover {
+  background-color: #8000ff;
+  border-color: #8000ff;
+}
+
+/* Added styles for btn-success */
+.btn-success {
+  background-color: #8000ff;
+  border-color: #8000ff;
+  box-shadow: 0 0 15px rgba(128, 0, 255, 0.5);
+}
+
+.btn-success:hover {
+  background-color: #9933ff;
+  border-color: #9933ff;
+  box-shadow: 0 0 20px rgba(128, 0, 255, 0.7);
+}
+.note {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+}
+
+.note h4 {
+  color: #8000ff;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(128, 0, 255, 0.3);
+}
+
+.note p {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.note small {
+  color: #aaa;
+  display: block;
+  font-size: 0.85em;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  color: #ff4444;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.note:hover .delete-btn {
+  opacity: 1;
+}
+
+.delete-btn:hover {
+  color: #ff0000;
+}
+
+.memory-card:hover {
+  transform: scale(1.05);
+}
+
+.click-area {
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: 24px;
+  transition: background-color 0.2s;
+  user-select: none;
+}
+
+.click-area:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.click-area:active {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Card Styles */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.hand-value {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #8000ff;
+  text-shadow: 0 0 5px rgba(128, 0, 255, 0.3);
+}
+
+/* Version display */
+.version {
+  font-size: 1rem;
+  color: #8000ff;
+  opacity: 0.8;
+  font-weight: normal;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+/* Card Game Styles */
+.blackjack-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s;
+  width: 130px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 64px;
+  margin: 10px;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.blackjack-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.blackjack-card.red {
+  color: #ff5555;
+  text-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+}
+
+.blackjack-card.black {
+  color: white;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.card-symbol {
+  font-size: 90px;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.card-value {
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  z-index: 2;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.top-left {
+  top: 8px;
+  left: 10px;
+}
+
+.bottom-right {
+  bottom: 8px;
+  right: 10px;
+  transform: rotate(180deg);
+}
+
+.suit-small {
+  font-size: 20px;
+  margin-top: 2px;
+}
+
+.card-back {
+  background: linear-gradient(135deg, #8000ff 0%, #3a0073 100%);
+  background-size: 10px 10px;
+  background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 1px, transparent 0, transparent 50%);
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Game board layout */
+.dealer-hand, .player-hand {
+  margin-bottom: 30px;
+}
+
+.hand-value {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #8000ff;
+  text-shadow: 0 0 5px rgba(128, 0, 255, 0.3);
+}
+
+/* Snake Game Styles */
+.game-panel {
+  background: rgba(0, 0, 0, 0.75);
+  border: 2px solid rgba(128, 0, 255, 0.3);
+  box-shadow: 0 0 15px rgba(128, 0, 255, 0.2);
+  border-radius: 10px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.game-panel:hover {
+  box-shadow: 0 0 20px rgba(128, 0, 255, 0.3);
+  border-color: rgba(128, 0, 255, 0.4);
+}
+
+#gameCanvas {
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid rgba(128, 0, 255, 0.4);
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(128, 0, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+#gameCanvas:hover {
+  box-shadow: 0 0 15px rgba(128, 0, 255, 0.3);
+  transform: scale(1.005);
+}
+
+.score-display {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  color: white;
+  background: rgba(128, 0, 255, 0.1);
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(128, 0, 255, 0.3);
+  box-shadow: 0 0 8px rgba(128, 0, 255, 0.1);
+}
+
+.score-value {
+  color: #a065dd;
+  font-weight: bold;
+}
+
+.game-instructions {
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.leaderboard {
+  background: rgba(0, 0, 0, 0.75);
+  border: 2px solid rgba(128, 0, 255, 0.3);
+  box-shadow: 0 0 15px rgba(128, 0, 255, 0.2);
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 30px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.leaderboard:hover {
+  box-shadow: 0 0 20px rgba(128, 0, 255, 0.3);
+  border-color: rgba(128, 0, 255, 0.4);
+}
+
+.leaderboard h3 {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.leaderboard h3::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 2px;
+  background: rgba(128, 0, 255, 0.5);
+  border-radius: 2px;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+
+.leaderboard-table td {
+  padding: 12px 8px;
+  text-align: center;
+}
+
+.leaderboard-header {
+  color: #a065dd;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  background: transparent !important;
+}
+
+.leaderboard-header td {
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(128, 0, 255, 0.3);
+}
+
+.leaderboard-header:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+.leaderboard-table tr:not(.leaderboard-header) {
+  background: rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+}
+
+.leaderboard-table tr:not(.leaderboard-header):hover {
+  background: rgba(128, 0, 255, 0.1);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.your-score {
+  background: rgba(128, 0, 255, 0.15) !important;
+  border-left: 3px solid #a065dd;
+}
+
+.control-btn {
+  width: 60px;
+  height: 60px;
+  background: rgba(128, 0, 255, 0.15);
+  border: 1px solid rgba(128, 0, 255, 0.3);
+  color: white;
+  font-size: 24px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 5px;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 8px rgba(128, 0, 255, 0.1);
+}
+
+.control-btn:active {
+  background-color: rgba(128, 0, 255, 0.3);
+  transform: scale(0.95);
+}
+
+#startButton {
+  transition: all 0.3s ease;
+  padding: 10px 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: rgba(128, 0, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(128, 0, 255, 0.3);
+  box-shadow: 0 0 8px rgba(128, 0, 255, 0.1);
+}
+
+#startButton:hover {
+  background: rgba(128, 0, 255, 0.3);
+  box-shadow: 0 0 10px rgba(128, 0, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+#startButton.running {
+  background: rgba(128, 0, 255, 0.4);
+  color: white;
+}
+
+/* Add particle effect background matching dashboard */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.welcome-user {
+  color: #bf80ff;
+  text-shadow: 0 0 10px rgba(128, 0, 255, 0.5);
+  margin-top: 15px;
+  font-weight: 500;
+}
